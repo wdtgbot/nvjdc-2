@@ -63,7 +63,7 @@ rm  -f chrome-linux.zip
 7 回到刚刚创建的目录
 
 ```
-cd  /nolanjdc
+cd  /root/nolanjdc
 ```
 
 8拉镜像
