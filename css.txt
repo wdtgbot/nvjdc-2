@@ -11,7 +11,7 @@ nolanjdc的公告部分就是一般的html，需要通过json转义写入config.
 
 <link rel="stylesheet" href="https://www.aobacore.com/css/style-card.css">
 <div class="card">
-<h1>狐东自动挂豆</h1> <br>
+<h1>自动挂豆</h1> <br>
 <red>本项目脚本收集于互联网。为了您的财产安全，请关闭京东免密支付。</red>
 <h2>（京东-设置-支付设置-支付验证设置）</h2> 
 <a class="button" href="https://wpa.qq.com/msgrd?v=3&uin=这里修改成机器人QQ号码&site=qq&menu=yes" target="_blank">添加Q机器人</a><br>
