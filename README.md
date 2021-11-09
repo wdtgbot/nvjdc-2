@@ -69,7 +69,7 @@ cd  /root/nolanjdc
 8拉镜像
 
 ```
-sudo docker pull nolanhzy/nvjdc:0.8
+sudo docker pull nolanhzy/nvjdc:0.9
 ```
 
 9启动镜像
@@ -77,7 +77,7 @@ sudo docker pull nolanhzy/nvjdc:0.8
 ```
 sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
 -v "$(pwd)"/.local-chromium:/app/.local-chromium  \
--it --privileged=true  nolanhzy/nvjdc:0.8 
+-it --privileged=true  nolanhzy/nvjdc:0.9 
 ```
 
 10查看 日志 
