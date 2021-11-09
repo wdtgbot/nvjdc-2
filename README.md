@@ -1,5 +1,5 @@
 # nvjdc
-Net core5  vue3 puppeteer sharp的一次尝试
+安装教程，有问题自己解决
 
 ## 提示
 [TG 频道](https://t.me/nvjdc) 
@@ -35,11 +35,11 @@ mkdir nolanjdc && cd nolanjdc
 3下载config.json 配置文件 并且修改自己的配置 不能缺少
 
 ```
-wget -O Config.json  https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
+wget -O Config.json  https://raw.githubusercontent.com/fai1988/nvjdc/main/Config.json
 ```
 国内请使用
  ```
-wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/NolanHzy/nvjdc/main/Config.json
+wget -O Config.json   https://ghproxy.com/https://raw.githubusercontent.com/fai1988/nvjdc/main/Config.json
 ```
 
 4 创建chromium文件夹并进入
