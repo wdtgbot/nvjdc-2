@@ -2,9 +2,9 @@
 安装教程，有问题自己解决
 
 ## 提示
-[TG 频道](https://t.me/nvjdc) 
+[TG 频道](https://t.me/joinchat/Yv6TIsjs8QUxM2I9) 
 
-[TG 群组](https://t.me/NolanHzy) 
+[TG 群组](https://t.me/joinchat/drvRtM-bqjYzOTE9) 
 
 由于我自己的环境是centos x86，arm并未测试
 
