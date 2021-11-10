@@ -69,15 +69,15 @@ cd  /root/nolanjdc
 8拉镜像
 
 ```
-sudo docker pull nolanhzy/nvjdc
+sudo docker pull nolanhzy/nvjdc:latest
 ```
 
 9启动镜像
 
 ```
-sudo docker run   --name nolanjdc -p 5701:80 -d -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
--v "$(pwd)"/.local-chromium:/app/.local-chromium \
--it --privileged=true nolanjdc/nvjdc:0.958
+sudo docker run --name nolanjdc -p 5701:80 -d -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
+-v  "$(pwd)"/.local-chromium:/app/.local-chromium \
+-it --privileged=true nolanhzy/nvjdc:latest
 ```
 
 10查看 日志 
@@ -116,26 +116,30 @@ cd /root/nolanjdc
 
 Config.json 是配置文件 可以热更新 修改后不用重启容器
 
-## 最后
-觉得不错。回来帮我点个star
-## 特别声明:
 
-* 本仓库涉仅用于测试和学习研究，禁止用于商业用途，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
 
-* 本项目内所有资源文件，禁止任何公众号、自媒体进行任何形式的转载、发布。
+# nvjdcforwin
 
-* Nolan对任何代码问题概不负责，包括但不限于由任何脚本错误导致的任何损失或损害.
 
-* 间接使用本仓库搭建的任何用户，包括但不限于建立VPS或在某些行为违反国家/地区法律或相关法规的情况下进行传播, Nolan对于由此引起的任何隐私泄漏或其他后果概不负责.
+# 第一步安装ASP.NET Core Runtime 5.0.12
 
-* 请勿将本项目的任何内容用于商业或非法目的，否则后果自负.
+安装地址:https://dotnet.microsoft.com/download/dotnet/5.0
+下载之后无脑下一步
 
-* 如果任何单位或个人认为该项目的脚本可能涉嫌侵犯其权利，则应及时通知并提供身份证明，所有权证明，我们将在收到认证文件后删除相关代码.
+#下载WEB压缩包  
 
-* 任何以任何方式查看此项目的人或直接或间接使用本仓库项目的任何脚本的使用者都应仔细阅读此声明。Nolan 保留随时更改或补充此免责声明的权利。一旦使用并复制了任何本仓库项目的规则，则视为您已接受此免责声明.
+下载地址：https://www.lanzouw.com/iPZFDwczhef
 
-**您必须在下载后的24小时内从计算机或手机中完全删除以上内容.**  </br>
-> ***您使用或者复制了本仓库且本人制作的任何脚本，则视为`已接受`此声明，请仔细阅读***
+在仓库里解压压缩修改配置文件夹中的Config.json
 
-## 多谢
+# 下载浏览器
 
+在解压的WEB文件夹中根目录创建一个.local-chromium\Win64-884014\chrome-win 这些文件夹
+
+下载浏览器地址:https://mirrors.huaweicloud.com/chromium-browser-snapshots/
+
+根据自己情况选择 884014 版本的浏览器 有WIN win64的 下载完成解压到.local-chromium\Win64-884014\里
+
+
+# 最后启动 
+ 管理员打开CMD CD到web文件夹中  输入 dotnet NETJDC.dll --urls=http://*:5000
