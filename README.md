@@ -75,15 +75,15 @@ sudo docker pull nolanhzy/nvjdc
 9启动镜像
 
 ```
-sudo docker run   --name nolanhzy -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
--v "$(pwd)"/.local-chromium:/app/.local-chromium  \
--it --privileged=true  nolanhzy/nvjdc
+sudo docker run   --name nolanjdc -p 5701:80 -d -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
+-v "$(pwd)"/.local-chromium:/app/.local-chromium \
+-it --privileged=true nolanjdc/nvjdc:0.958
 ```
 
 10查看 日志 
 
 ```
-docker logs -f nolanhzy 
+docker logs -f nolanjdc 
 
 ```
 
@@ -97,7 +97,7 @@ docker logs -f nolanhzy
 
 删除容器
 ```
-docker rm -f nolanhzy 
+docker rm -f nolanjdc 
 ```
 删除镜像
 ```
