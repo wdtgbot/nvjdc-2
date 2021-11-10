@@ -29,7 +29,7 @@ yum install wget unzip -y
 2创建一个目录放配置以及chromium
 
 ```
-mkdir nolanhzy && cd nolanhzy
+mkdir nolanjdc && cd nolanjdc
 ```
 
 3下载config.json 配置文件 并且修改自己的配置 不能缺少
@@ -63,7 +63,7 @@ rm  -f chrome-linux.zip
 7 回到刚刚创建的目录
 
 ```
-cd  /root/nolanhzy
+cd  /root/nolanjdc
 ```
 
 8拉镜像
@@ -107,7 +107,7 @@ docker rmi -f nolanhzy/nvjdc
 进入你以前下载过 浏览器 和JSON配置的文件夹中 
 如原来在 root 下 nolanjdc 文件夹中 下载的配置与浏览器
 ```
-cd /root/nolanhzy 
+cd /root/nolanjdc 
 ``` 
 然后重复后续步骤即可
 ## 注意事项
