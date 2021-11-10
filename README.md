@@ -29,7 +29,7 @@ yum install wget unzip -y
 2创建一个目录放配置以及chromium
 
 ```
-mkdir nolanjdc && cd nolanjdc
+mkdir nolanjdc && cd nolanhzy
 ```
 
 3下载config.json 配置文件 并且修改自己的配置 不能缺少
@@ -63,19 +63,19 @@ rm  -f chrome-linux.zip
 7 回到刚刚创建的目录
 
 ```
-cd  /root/nolanjdc
+cd  /root/nolanhzy
 ```
 
 8拉镜像
 
 ```
-sudo docker pull nolanjdc/nvjdc:0.9
+sudo docker pull nolanhzy/nvjdc:0.9
 ```
 
 9启动镜像
 
 ```
-sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
+sudo docker run   --name nolanhzy -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
 -v "$(pwd)"/.local-chromium:/app/.local-chromium  \
 -it --privileged=true  nolanhzy/nvjdc:0.9 
 ```
@@ -83,7 +83,7 @@ sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)"/Config.json:/app/C
 10查看 日志 
 
 ```
-docker logs -f nolanjdc 
+docker logs -f nolanhzy 
 
 ```
 
@@ -97,17 +97,17 @@ docker logs -f nolanjdc
 
 删除容器
 ```
-docker rm -f nolanjdc 
+docker rm -f nolanhzy 
 ```
 删除镜像
 ```
-docker rmi -f nolanjdc/nvjdc:0.8
+docker rmi -f nolanhzy/nvjdc:0.8
 ```
 
 进入你以前下载过 浏览器 和JSON配置的文件夹中 
 如原来在 root 下 nolanjdc 文件夹中 下载的配置与浏览器
 ```
-cd /root/nolanjdc 
+cd /root/nolanhzy 
 ``` 
 然后重复后续步骤即可
 ## 注意事项
