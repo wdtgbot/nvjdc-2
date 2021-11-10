@@ -69,7 +69,7 @@ cd  /root/nolanjdc
 8拉镜像
 
 ```
-sudo docker pull nolanhzy/nvjdc:0.9
+sudo docker pull nolanjdc/nvjdc:0.9
 ```
 
 9启动镜像
@@ -101,7 +101,7 @@ docker rm -f nolanjdc
 ```
 删除镜像
 ```
-docker rmi -f nolanhzy/nvjdc:0.8
+docker rmi -f nolanjdc/nvjdc:0.8
 ```
 
 进入你以前下载过 浏览器 和JSON配置的文件夹中 
