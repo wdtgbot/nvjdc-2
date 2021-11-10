@@ -29,7 +29,7 @@ yum install wget unzip -y
 2创建一个目录放配置以及chromium
 
 ```
-mkdir nolanjdc && cd nolanhzy
+mkdir nolanhzy && cd nolanhzy
 ```
 
 3下载config.json 配置文件 并且修改自己的配置 不能缺少
