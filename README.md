@@ -1,5 +1,5 @@
 # nvjdc
-安装教程，有问题自己解决
+安装教程
 
 ## 提示
 [TG 频道](https://t.me/joinchat/Yv6TIsjs8QUxM2I9) 
