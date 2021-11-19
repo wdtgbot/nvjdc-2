@@ -63,7 +63,7 @@ cd  /root/nolanjdc
 8拉镜像
 
 ```
-sudo docker pull nolanhzy/nvjdc:latest
+sudo docker pull nolanjdc/nvjdc:latest
 ```
 
 9启动镜像
@@ -71,7 +71,7 @@ sudo docker pull nolanhzy/nvjdc:latest
 ```
 sudo docker run --name nolanjdc -p 5701:80 -d -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
 -v  "$(pwd)"/.local-chromium:/app/.local-chromium \
--it --privileged=true nolanhzy/nvjdc:latest
+-it --privileged=true nolanjdc/nvjdc:latest
 ```
 
 10查看 日志 
@@ -95,7 +95,7 @@ docker rm -f nolanjdc
 ```
 删除镜像
 ```
-docker rmi -f nolanhzy/nvjdc
+docker rmi -f nolanjdc/nvjdc
 ```
 
 进入你以前下载过 浏览器 和JSON配置的文件夹中 
