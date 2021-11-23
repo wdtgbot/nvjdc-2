@@ -69,9 +69,9 @@ sudo docker pull nolanjdc/nvjdc:latest
 9启动镜像
 
 ```
-sudo docker run --name nolanjdc -p 5701:80 -d -v  "$(pwd)"/Config.json:/app/Config/Config.json:ro \
--v  "$(pwd)"/.local-chromium:/app/.local-chromium \
--it --privileged=true nolanjdc/nvjdc:latest
+sudo docker run   --name nolanjdc -p 5701:80 -d  -v  "$(pwd)":/app \
+-v /etc/localtime:/etc/localtime:ro \
+-it --privileged=true  nolanjdc/nvjdc:latest
 ```
 
 10查看 日志 
